@@ -1,0 +1,19 @@
+{
+  "name": "quick-mixins-less",
+  "version": "0.0.1",
+  "description": "quick-mixins-less for study and training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarnor/quick-mixins-less.git"
+  },
+  "author": "Air",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarnor/quick-mixins-less/issues"
+  },
+  "homepage": "https://github.com/sarnor/quick-mixins-less#readme"
+}
