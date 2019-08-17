@@ -6,9 +6,6 @@
 @w: rgba(255, 255, 255, 1);/*= white color =*/
 
 @tr: transparent;/*= trasparent =*/
-.test{
-    border:5px solid blue;
-}
 
 
 .all() {
@@ -175,4 +172,12 @@ stretch flex-end flex-start center space-around space-between
     align-self: @as;
     flex-basis: @fb;
     order: @o;
+}
+
+.grid-parent(@g:grid; @gtc:repeat(1, 1fr);@gtr:repeat(1, 1fr); @gcg:10px;@grg:10px;){
+    display: @g;
+    grid-template-columns: @gtc;
+    grid-template-rows: @gtr;
+    grid-column-gap: @gcg;
+    grid-row-gap: @grg;
 }
