@@ -1,4 +1,4 @@
-/* sdsdsd*/
+
 @btr: rgba(0, 0, 0, .5);/*= black color trasparent =*/
 @wtr: rgba(255, 255, 255, .5);/*= white color trasparent =*/
 
@@ -149,7 +149,7 @@ stretch flex-end flex-start center space-around space-between
 .flex-parent( @d: flex;
 @fd: row;
 @fw: nowrap;
-@jc: flex-start;
+@jc: center;
 @ai: center;
 @ac: center;
 ) {
@@ -174,10 +174,36 @@ stretch flex-end flex-start center space-around space-between
     order: @o;
 }
 
-.grid-parent(@g:grid; @gtc:repeat(1, 1fr);@gtr:repeat(1, 1fr); @gcg:10px;@grg:10px;){
+.grid-parent(
+    @g:grid; 
+    @gtc:repeat(1, 1fr);
+    @gtr:repeat(1, 1fr); 
+    @gcg:1px;@grg:1px;
+    @gac:auto;
+    @gar:auto;
+    @gaf:column;
+    @ji:stretch;
+@ai:stretch;
+@jc:stretch;
+@ac:stretch;
+    ){
     display: @g;
     grid-template-columns: @gtc;
     grid-template-rows: @gtr;
+    grid-template-areas:"";
     grid-column-gap: @gcg;
     grid-row-gap: @grg;
+    grid-auto-columns:@gac;
+    grid-auto-rows:@gar;
+    grid-auto-flow: @gaf;
+    justify-items:@ji;
+    align-items:@ai;
+    justify-content:@jc;
+    align-content:@ac;
+}
+
+.grid-child(){
+justify-self:stretch;
+align-self:stretch;
+grid-area: "";
 }
