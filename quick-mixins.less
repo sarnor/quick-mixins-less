@@ -224,3 +224,32 @@ align-self:@as;
 .qm-br(@br:50%;){
     border-radius: @br;
 }
+
+
+.anmation(
+	@an:none;
+	@adur:0s;
+	@atf:ease;
+	@adel:0s;
+	@aic:1;
+	@adir:normal;
+	@afm:none;
+	@aps:running;
+) {
+    animation-name: @an;
+    -webkit-animation-name: @an;
+    animation-duration: @adur;
+    -webkit-animation-duration: @adur;
+    animation-timing-function: @atf;
+    -webkit-animation-timing-function: @atf;
+    animation-delay: @adel;
+    -webkit-animation-delay: @adel;
+    animation-iteration-count: @aic;
+    -webkit-animation-iteration-count: @aic;
+    animation-direction: @adir;
+    -webkit-animation-direction: @adir;
+    animation-fill-mode: @afm;
+    -webkit-animation-fill-mode: @afm;
+    animation-play-state: @aps;
+    -webkit-animation-play-state: @aps;
+}
