@@ -1,3 +1,5 @@
+//////////////////////////////////
+
 @btr: rgba(0, 0, 0, .5);
 /*= black color trasparent =*/
 @wtr: rgba(255, 255, 255, .5);
@@ -191,12 +193,11 @@ stretch flex-end flex-start center space-around space-between
     order: @o;
 }
 
-.grid-parent(
-    @g: grid;
+.grid-parent(@g: grid;
     @gtc: repeat(1, 1fr);
     @gtr: repeat(1, 1fr);
-    @gta:none;
-    @gcg: 1px; 
+    @gta: none;
+    @gcg: 1px;
     @grg: 1px;
     @gg: auto;
     @gac: auto;
@@ -224,7 +225,7 @@ stretch flex-end flex-start center space-around space-between
     align-content: @ac;
 }
 
-.grid-child(@js: stretch; @as: stretch; @ga:auto;) {
+.grid-child(@js: stretch; @as: stretch; @ga: auto; ) {
     justify-self: @js;
     align-self: @as;
     grid-area: @ga;
