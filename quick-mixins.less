@@ -1,6 +1,6 @@
-@btr: rgba(0, 0, 0, .5);
+@btr: rgba(0, 0, 0, 0.5);
 /*= black color trasparent =*/
-@wtr: rgba(255, 255, 255, .5);
+@wtr: rgba(255, 255, 255, 0.5);
 /*= white color trasparent =*/
 
 @b: rgba(0, 0, 0, 1);
@@ -11,13 +11,11 @@
 @tr: transparent;
 /*= trasparent =*/
 
-
 .all {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 .t(@s: 1px;
     @t: solid;
@@ -26,27 +24,27 @@
     @p: 1px;
 
 ) {
-    border: @s @t @c;
-    margin: @m;
-    padding: @p;
+  border: @s @t @c;
+  margin: @m;
+  padding: @p;
 }
 
 .ns {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .s {
-    -webkit-touch-callout: text;
-    -webkit-user-select: text;
-    -khtml-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .text(@c: white;
@@ -54,7 +52,7 @@
     @lh: normal;
     @ls: normal;
     @fs: medium;
-    @ff: 'Raleway', 'sans-serif';
+    @ff: "Raleway", "sans-serif";
     @fw: normal;
     @fst: normal;
     @fk: auto;
@@ -65,24 +63,26 @@
     @wm: horizontal-tb;
     @ww: normal;
     @ws: normal;
+    @to: clip;
 
 ) {
-    white-space: @ws;
-    word-wrap: @ww;
-    writing-mode: @wm;
-    word-break: @wb;
-    word-spacing: @wsg;
-    color: @c;
-    text-align: @ta;
-    line-height: @lh;
-    letter-spacing: @ls;
-    font-size: @fs;
-    font-family: @ff;
-    font-weight: @fw;
-    font-style: @fst;
-    font-kerning: @fk;
-    font-stretch: @fsch;
-    font-variant: @fv;
+  white-space: @ws;
+  word-wrap: @ww;
+  writing-mode: @wm;
+  word-break: @wb;
+  word-spacing: @wsg;
+  color: @c;
+  text-align: @ta;
+  line-height: @lh;
+  letter-spacing: @ls;
+  font-size: @fs;
+  font-family: @ff;
+  font-weight: @fw;
+  font-style: @fst;
+  font-kerning: @fk;
+  font-stretch: @fsch;
+  font-variant: @fv;
+  text-overflow: @to;
 }
 
 .size(@w: 100%;
@@ -93,15 +93,13 @@
     @max-h: none;
 
 ) {
-    width: @w;
-    height: @h;
-    min-width: @min-w;
-    min-height: @min-h;
-    max-width: @max-w;
-    max-height: @max-h;
+  width: @w;
+  height: @h;
+  min-width: @min-w;
+  min-height: @min-h;
+  max-width: @max-w;
+  max-height: @max-h;
 }
-
-
 
 .pr(@p: relative;
     @t: auto;
@@ -110,11 +108,11 @@
     @l: auto;
 
 ) {
-    position: @p;
-    top: @t;
-    right: @r;
-    bottom: @b;
-    left: @l;
+  position: @p;
+  top: @t;
+  right: @r;
+  bottom: @b;
+  left: @l;
 }
 
 .pa(@p: absolute;
@@ -124,11 +122,11 @@
     @l: 0;
 
 ) {
-    position: @p;
-    top: @t;
-    right: @r;
-    bottom: @b;
-    left: @l;
+  position: @p;
+  top: @t;
+  right: @r;
+  bottom: @b;
+  left: @l;
 }
 
 .center(@p: absolute;
@@ -138,10 +136,10 @@
     @y: -50%;
 
 ) {
-    position: @p;
-    left: @l;
-    top: @t;
-    transform: translate(@x, @y);
+  position: @p;
+  left: @l;
+  top: @t;
+  transform: translate(@x, @y);
 }
 
 .ts(@p: all;
@@ -150,7 +148,7 @@
     @d: 0s;
 
 ) {
-    transition: @p @t @e @d;
+  transition: @p @t @e @d;
 }
 
 /* 
@@ -169,12 +167,12 @@ stretch flex-end flex-start center space-around space-between
     @ac: center;
 
 ) {
-    display: @d;
-    flex-wrap: @fw;
-    flex-direction: @fd;
-    justify-content: @jc;
-    align-items: @ai;
-    align-content: @ac;
+  display: @d;
+  flex-wrap: @fw;
+  flex-direction: @fd;
+  justify-content: @jc;
+  align-items: @ai;
+  align-content: @ac;
 }
 
 .flex-child(@fg: 0;
@@ -184,11 +182,11 @@ stretch flex-end flex-start center space-around space-between
     @o: 0;
 
 ) {
-    flex-grow: @fg;
-    flex-shrink: @fs;
-    align-self: @as;
-    flex-basis: @fb;
-    order: @o;
+  flex-grow: @fg;
+  flex-shrink: @fs;
+  align-self: @as;
+  flex-basis: @fb;
+  order: @o;
 }
 
 .grid-parent(@g: grid;
@@ -207,33 +205,31 @@ stretch flex-end flex-start center space-around space-between
     @ac: stretch;
 
 ) {
-    display: @g;
-    grid-template-columns: @gtc;
-    grid-template-rows: @gtr;
-    grid-template-areas: @gta;
-    grid-column-gap: @gcg;
-    grid-row-gap: @grg;
-    grid-gap: @gg;
-    grid-auto-columns: @gac;
-    grid-auto-rows: @gar;
-    grid-auto-flow: @gaf;
-    justify-items: @ji;
-    align-items: @ai;
-    justify-content: @jc;
-    align-content: @ac;
+  display: @g;
+  grid-template-columns: @gtc;
+  grid-template-rows: @gtr;
+  grid-template-areas: @gta;
+  grid-column-gap: @gcg;
+  grid-row-gap: @grg;
+  grid-gap: @gg;
+  grid-auto-columns: @gac;
+  grid-auto-rows: @gar;
+  grid-auto-flow: @gaf;
+  justify-items: @ji;
+  align-items: @ai;
+  justify-content: @jc;
+  align-content: @ac;
 }
 
 .grid-child(@js: stretch; @as: stretch; @ga: auto; ) {
-    justify-self: @js;
-    align-self: @as;
-    grid-area: @ga;
-
+  justify-self: @js;
+  align-self: @as;
+  grid-area: @ga;
 }
 
 .qm-br(@br: 50%; ) {
-    border-radius: @br;
+  border-radius: @br;
 }
-
 
 .animation(@an: none;
     @adur: 0s;
@@ -245,20 +241,42 @@ stretch flex-end flex-start center space-around space-between
     @aps: running;
 
 ) {
-    animation-name: @an;
-    -webkit-animation-name: @an;
-    animation-duration: @adur;
-    -webkit-animation-duration: @adur;
-    animation-timing-function: @atf;
-    -webkit-animation-timing-function: @atf;
-    animation-delay: @adel;
-    -webkit-animation-delay: @adel;
-    animation-iteration-count: @aic;
-    -webkit-animation-iteration-count: @aic;
-    animation-direction: @adir;
-    -webkit-animation-direction: @adir;
-    animation-fill-mode: @afm;
-    -webkit-animation-fill-mode: @afm;
-    animation-play-state: @aps;
-    -webkit-animation-play-state: @aps;
+  animation-name: @an;
+  -webkit-animation-name: @an;
+  animation-duration: @adur;
+  -webkit-animation-duration: @adur;
+  animation-timing-function: @atf;
+  -webkit-animation-timing-function: @atf;
+  animation-delay: @adel;
+  -webkit-animation-delay: @adel;
+  animation-iteration-count: @aic;
+  -webkit-animation-iteration-count: @aic;
+  animation-direction: @adir;
+  -webkit-animation-direction: @adir;
+  animation-fill-mode: @afm;
+  -webkit-animation-fill-mode: @afm;
+  animation-play-state: @aps;
+  -webkit-animation-play-state: @aps;
+}
+
+.background(@bc: rgba(0, 0, 0, 0);
+    @bi: none;
+    @ba: scroll;
+    @bo: padding-box;
+    @bp: 0 0;
+    @br: repeat;
+    @bs: auto;
+    @bcp: border-box;
+    @bbm: normal;
+
+) {
+  background-color: @bc;
+  background-image: @bi;
+  background-attachment: @ba;
+  background-origin: @bo;
+  background-position: @bp;
+  background-repeat: @br;
+  background-size: @bs;
+  background-clip: @bcp;
+  background-blend-mode: @bbm;
 }
