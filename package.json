@@ -1,6 +1,6 @@
 {
   "name": "quick-mixins-less",
-  "version": "0.0.07",
+  "version": "0.0.08",
   "description": "quick-mixins-less for study and training",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sarnor/quick-mixins-less/issues"
   },
-  "homepage": "https://github.com/sarnor/quick-mixins-less#readme"
+  "homepage": "https://github.com/sarnor/quick-mixins-less#readme",
+  "dependencies": {
+    "user": "0.0.0"
+  }
 }
