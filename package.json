@@ -1,6 +1,6 @@
 {
   "name": "quick-mixins-less",
-  "version": "0.0.7",
+  "version": "0.0.07",
   "description": "quick-mixins-less for study and training",
   "main": "index.js",
   "scripts": {
