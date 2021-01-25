@@ -5,10 +5,10 @@
 }
 
 .t(@s: 1px;
-    @t: solid;
-    @c: orange;
-    @m: 1px;
-    @p: 1px;
+  @t: solid;
+  @c: orange;
+  @m: 1px;
+  @p: 1px;
 
 ) {
   border: @s @t @c;
@@ -35,22 +35,23 @@
 }
 
 .text(@c: white;
-    @ta: center;
-    @lh: normal;
-    @ls: normal;
-    @fs: medium;
-    @ff: "Raleway", "sans-serif";
-    @fw: normal;
-    @fst: normal;
-    @fk: auto;
-    @fsch: normal;
-    @fv: normal;
-    @wsg: normal;
-    @wb: normal;
-    @wm: horizontal-tb;
-    @ww: normal;
-    @ws: normal;
-    @to: clip;
+  @ta: center;
+  @lh: normal;
+  @ls: normal;
+  @fs: medium;
+  @ff: "Raleway", "sans-serif";
+  @fw: normal;
+  @fst: normal;
+  @fk: auto;
+  @fsch: normal;
+  @fv: normal;
+  @wsg: normal;
+  @wb: normal;
+  @wm: horizontal-tb;
+  @ww: normal;
+  @ws: normal;
+  @to: clip;
+  @tt:none;
 
 ) {
   white-space: @ws;
@@ -70,14 +71,15 @@
   font-stretch: @fsch;
   font-variant: @fv;
   text-overflow: @to;
+  text-transform: @tt;
 }
 
 .size(@w: 100%;
-    @h: 100%;
-    @min-w: 0;
-    @min-h: 0;
-    @max-w: none;
-    @max-h: none;
+  @h: 100%;
+  @min-w: 0;
+  @min-h: 0;
+  @max-w: none;
+  @max-h: none;
 
 ) {
   width: @w;
@@ -89,10 +91,10 @@
 }
 
 .pr(@p: relative;
-    @t: auto;
-    @r: auto;
-    @b: auto;
-    @l: auto;
+  @t: auto;
+  @r: auto;
+  @b: auto;
+  @l: auto;
 
 ) {
   position: @p;
@@ -103,10 +105,10 @@
 }
 
 .pa(@p: absolute;
-    @t: 0;
-    @r: 0;
-    @b: 0;
-    @l: 0;
+  @t: 0;
+  @r: 0;
+  @b: 0;
+  @l: 0;
 
 ) {
   position: @p;
@@ -117,10 +119,10 @@
 }
 
 .center(@p: absolute;
-    @l: 50%;
-    @t: 50%;
-    @x: -50%;
-    @y: -50%;
+  @l: 50%;
+  @t: 50%;
+  @x: -50%;
+  @y: -50%;
 
 ) {
   position: @p;
@@ -130,9 +132,9 @@
 }
 
 .ts(@p: all;
-    @t: 0.3s;
-    @e: ease;
-    @d: 0s;
+  @t: 0.3s;
+  @e: ease;
+  @d: 0s;
 
 ) {
   transition: @p @t @e @d;
@@ -147,11 +149,11 @@ stretch flex-end flex-start center space-around space-between
 */
 
 .flex-parent(@d: flex;
-    @fd: row;
-    @fw: nowrap;
-    @jc: center;
-    @ai: center;
-    @ac: center;
+  @fd: row;
+  @fw: nowrap;
+  @jc: center;
+  @ai: center;
+  @ac: center;
 
 ) {
   display: @d;
@@ -163,10 +165,10 @@ stretch flex-end flex-start center space-around space-between
 }
 
 .flex-child(@fg: 0;
-    @fs: 1;
-    @as: auto;
-    @fb: auto;
-    @o: 0;
+  @fs: 1;
+  @as: auto;
+  @fb: auto;
+  @o: 0;
 
 ) {
   flex-grow: @fg;
@@ -177,19 +179,19 @@ stretch flex-end flex-start center space-around space-between
 }
 
 .grid-parent(@g: grid;
-    @gtc: repeat(1, 1fr);
-    @gtr: repeat(1, 1fr);
-    @gta: none;
-    @gcg: 1px;
-    @grg: 1px;
-    @gg: auto;
-    @gac: auto;
-    @gar: auto;
-    @gaf: column;
-    @ji: stretch;
-    @ai: stretch;
-    @jc: stretch;
-    @ac: stretch;
+  @gtc: repeat(1, 1fr);
+  @gtr: repeat(1, 1fr);
+  @gta: none;
+  @gcg: 1px;
+  @grg: 1px;
+  @gg: auto;
+  @gac: auto;
+  @gar: auto;
+  @gaf: column;
+  @ji: stretch;
+  @ai: stretch;
+  @jc: stretch;
+  @ac: stretch;
 
 ) {
   display: @g;
@@ -219,13 +221,13 @@ stretch flex-end flex-start center space-around space-between
 }
 
 .animation(@an: none;
-    @adur: 0s;
-    @atf: ease;
-    @adel: 0s;
-    @aic: 1;
-    @adir: normal;
-    @afm: none;
-    @aps: running;
+  @adur: 0s;
+  @atf: ease;
+  @adel: 0s;
+  @aic: 1;
+  @adir: normal;
+  @afm: none;
+  @aps: running;
 
 ) {
   animation-name: @an;
@@ -247,14 +249,14 @@ stretch flex-end flex-start center space-around space-between
 }
 
 .background(@bc: rgba(0, 0, 0, 0);
-    @bi: none;
-    @ba: scroll;
-    @bo: padding-box;
-    @bp: 0 0;
-    @br: repeat;
-    @bs: auto;
-    @bcp: border-box;
-    @bbm: normal;
+  @bi: none;
+  @ba: scroll;
+  @bo: padding-box;
+  @bp: 0 0;
+  @br: repeat;
+  @bs: auto;
+  @bcp: border-box;
+  @bbm: normal;
 
 ) {
   background-color: @bc;
